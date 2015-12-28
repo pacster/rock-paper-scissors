@@ -22,7 +22,7 @@ var resultado;
 // The maths
 	if (humano == computadora) {
 		resultado = "Empate";
-	} 
+	}
 	else if (humano == "Piedra") {
 		if (computadora == "Papel") {
 			resultado == "perdiste";
@@ -61,5 +61,10 @@ var resultado;
 
 //mostrar resultados
 document.getElementById("respuesta-h").innerHTML = humano;
-document.getElementById("respuesta-c").innerHTML = computadora; 
+document.getElementById("respuesta-c").innerHTML = computadora;
 document.getElementById("resultado").innerHTML = resultado;
+
+//Replayability features
+var playAgainButton = document.getElementById("play_again");
+
+playAgainButton.onclick=function() {location.reload()};
